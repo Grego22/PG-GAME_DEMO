@@ -49,4 +49,9 @@ class CautiousPlayer < Player
   end
 end
 
+
+class WyattEarp < Player
+  def roll_again?
+    super && @turn_score <27
+  end
 ## TODO add your own Player subclasses here
