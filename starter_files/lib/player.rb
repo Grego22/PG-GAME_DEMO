@@ -52,9 +52,15 @@ end
 
 class WyattEarp < Player
   def roll_again?
-  super && @turn_score >12
+    super && @turn_score > 3
   end
 end
 
 class JimmyTheGreek < Player
+  def roll_again?
+    super && @turn_score > 43
+  end
+end
+
+
 ## TODO add your own Player subclasses here

@@ -13,7 +13,7 @@ ARGV.each do |arg|
 end
 
 if players.length < 2
-  players.push(CautiousPlayer.new("Cautious1"))
+  players.push(JimmyTheGreek.new("JimmyTheGreek"))
 end
 if players.length == 1
   players.push(WyattEarp.new("WyattEarp"))
