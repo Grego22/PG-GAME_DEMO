@@ -16,7 +16,7 @@ if players.length < 2
   players.push(JimmyTheGreek.new("JimmyTheGreek"))
 end
 if players.length == 1
-  players.push(WyattEarp.new("WyattEarp"))
+  players.push(CautiousPlayer.new("Cautious1"))
 end
 
 pig = Pig.new(*players, games: 1000, silent: true)

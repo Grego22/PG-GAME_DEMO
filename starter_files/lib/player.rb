@@ -50,15 +50,15 @@ class CautiousPlayer < Player
 end
 
 
-class WyattEarp < Player
-  def roll_again?
-    super && @turn_score > 3
-  end
-end
+# class WyattEarp < Player
+#   def roll_again?
+#     super && @turn_score
+#   end
+# end
 
 class JimmyTheGreek < Player
   def roll_again?
-    super && @turn_score > 43
+  (@turn_score > 10 && @turn_score < 30)
   end
 end
 
