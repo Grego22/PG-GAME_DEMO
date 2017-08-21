@@ -58,7 +58,7 @@ end
 
 class JimmyTheGreek < Player
   def roll_again?
-  (@turn_score > 10 && @turn_score < 30)
+    (@turn_score > 10 && @turn_score < 30)
   end
 end
 
